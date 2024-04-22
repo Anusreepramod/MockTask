@@ -37,6 +37,7 @@ class Splash extends StatelessWidget {
                 height: 0,
               ),
             ),
+            
             Text(
               'Assessments',
               textAlign: TextAlign.center,
@@ -45,10 +46,10 @@ class Splash extends StatelessWidget {
                 fontSize: 20,
                 fontFamily: 'Nunito',
                 fontWeight: FontWeight.w600,
-                height: 0,
+                height: 0, 
               ),
             ),
-            SizedBox(width: 289, child: Text(
+            SizedBox(width: 289,child: Text(
               'Assessments are like check-ups for learning. They show strengths, weaknesses, and areas to improve, guiding both students and teachers for better outcomes.',
               textAlign: TextAlign.center,
               style: TextStyle(

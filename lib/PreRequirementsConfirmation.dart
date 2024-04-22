@@ -11,7 +11,9 @@ class Confirmation extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: 200),
             Container(
+              
               width: 320,
               height: 320,
               decoration: BoxDecoration(

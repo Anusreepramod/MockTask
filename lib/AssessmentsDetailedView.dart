@@ -11,6 +11,7 @@ class Assessments extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: 140),
             Container(
               width: 281,
               height: 281,

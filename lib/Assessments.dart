@@ -107,41 +107,44 @@ class Assessment extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
-              Text.rich(
-                TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'ShareInfo',
-                      style: TextStyle(
-                        color: Color(0xFFEE5602),
-                        fontSize: 12.50,
-                        fontFamily: 'Nunito',
-                        fontWeight: FontWeight.w700,
-                        height: 0,
+              SizedBox(height: 5),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'ShareInfo',
+                        style: TextStyle(
+                          color: Color(0xFFEE5602),
+                          fontSize: 12.50,
+                          fontFamily: 'Nunito',
+                          fontWeight: FontWeight.w700,
+                          height: 0,
+                        ),
                       ),
-                    ),
-                    TextSpan(
-                      text: ' for ',
-                      style: TextStyle(
-                        color: Color(0xFF8B8B8B),
-                        fontSize: 12.50,
-                        fontFamily: 'Nunito',
-                        fontWeight: FontWeight.w700,
-                        height: 0,
+                      TextSpan(
+                        text: ' for ',
+                        style: TextStyle(
+                          color: Color(0xFF8B8B8B),
+                          fontSize: 12.50,
+                          fontFamily: 'Nunito',
+                          fontWeight: FontWeight.w700,
+                          height: 0,
+                        ),
                       ),
-                    ),
-                    TextSpan(
-                      text: 'CE Thalassery',
-                      style: TextStyle(
-                        color: Color(0xFF077AD7),
-                        fontSize: 12.50,
-                        fontFamily: 'Nunito',
-                        fontWeight: FontWeight.w700,
-                        height: 0,
+                      TextSpan(
+                        text: 'CE Thalassery',
+                        style: TextStyle(
+                          color: Color(0xFF077AD7),
+                          fontSize: 12.50,
+                          fontFamily: 'Nunito',
+                          fontWeight: FontWeight.w700,
+                          height: 0,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],

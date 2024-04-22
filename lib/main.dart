@@ -6,6 +6,7 @@ import 'package:mock_task/AssessmentsSplash.dart';
 import 'package:mock_task/LeaderBoards.dart';
 import 'package:mock_task/PracticeComingSoon.dart';
 import 'package:mock_task/PreRequirementsConfirmation.dart';
+import 'package:mock_task/TrainingsPages.dart';
 
 
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:Splash(),
+      home:Confirmation(),
     );
   }
 }

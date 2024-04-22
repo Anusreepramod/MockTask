@@ -11,6 +11,7 @@ class Practice extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: 250),
             Container(
               width: 221,
               height: 179,
@@ -35,8 +36,11 @@ class Practice extends StatelessWidget {
                       height: 0,
                       letterSpacing: 2.50,
                     ),
+                    
                   ),
+                  
                   TextSpan(
+                    
                     text: 'Sorry',
                     style: TextStyle(
                       color: Color(0xFF260446),
@@ -45,6 +49,7 @@ class Practice extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                       height: 0.11,
                     ),
+                    
                   ),
                   TextSpan(
                     text: ' ',
@@ -110,7 +115,7 @@ class Practice extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 10), // Adjust the distance here as needed
+            SizedBox(height: 20), // Adjust the distance here as needed
             Text(
               'This Feature is Limited for Few Users !',
               textAlign: TextAlign.center,
@@ -171,7 +176,7 @@ class Practice extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 200),
             Container(
               width: 303,
               height: 44,
