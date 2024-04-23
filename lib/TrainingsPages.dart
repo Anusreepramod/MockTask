@@ -79,7 +79,7 @@ class Training extends StatelessWidget {
                     height: 27,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/images/Search (1).png"),
+                        image: AssetImage("assets/images/Search (2).png"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -101,7 +101,7 @@ class Training extends StatelessWidget {
                     height: 30,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/images/Frame 37418.png"),
+                        image: AssetImage("assets/images/Frame 37418 (1).png"),
                         fit: BoxFit.fill,
                       ),
                     ),
