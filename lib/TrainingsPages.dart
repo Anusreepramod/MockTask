@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mock_task/LeaderBoards.dart';
+import 'package:mock_task/TrainingDetailed.dart';
 
 class Training extends StatelessWidget {
   const Training({Key? key}) : super(key: key);
@@ -34,13 +36,19 @@ class Training extends StatelessWidget {
                     ),
                   ),
                   Spacer(), // Added spacer to push upcoming trainings to the right
-                  Container(
-                    width: 22,
-                    height: 22,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage("assets/images/data_exploration.png"),
-                        fit: BoxFit.fill,
+                  GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Leader()));
+                    },
+                    child: Container(
+                      width: 22,
+                      height: 22,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/data_exploration.png"),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                   ),
@@ -113,241 +121,253 @@ class Training extends StatelessWidget {
             SizedBox(
               child: Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  width: 335,
-                  height: 170,
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(width: 1, color: Color(0xFFD9D9D9)),
-                      borderRadius: BorderRadius.circular(25),
+                child:  GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                  child: Container(
+                    width: 335,
+                    height: 170,
+                    decoration: ShapeDecoration(
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(width: 1, color: Color(0xFFD9D9D9)),
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                     ),
-                  ),
-                  child: Stack(
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10, left: 10),
-                            child: Container(
-                              width: 46,
-                              height: 46,
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                      width: 1, color: Color(0xFFD9D9D9)),
-                                  borderRadius: BorderRadius.circular(12.50),
-                                ),
-                              ),
-                              child: Container(
-                                width: 25,
-                                height: 25,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image:
-                                        AssetImage("assets/images/image9.png"),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(width: 10),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 20, left: 10),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Python Basics',
-                                  style: TextStyle(
-                                    color: Color(0xFF260446),
-                                    fontSize: 15,
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    height: 0,
-                                  ),
-                                ),
-                                SizedBox(height: 2),
-                                Text.rich(
-                                  TextSpan(
-                                    children: [
-                                      TextSpan(
-                                        text: 'ShareInfo',
-                                        style: TextStyle(
-                                          color: Color(0xFFEE5602),
-                                          fontSize: 12.50,
-                                          fontFamily: 'Nunito',
-                                          fontWeight: FontWeight.w700,
-                                          height: 0,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text: ' for ',
-                                        style: TextStyle(
-                                          color: Color(0xFF8B8B8B),
-                                          fontSize: 12.50,
-                                          fontFamily: 'Nunito',
-                                          fontWeight: FontWeight.w700,
-                                          height: 0,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text: 'CE Thalassery',
-                                        style: TextStyle(
-                                          color: Color(0xFF077AD7),
-                                          fontSize: 12.50,
-                                          fontFamily: 'Nunito',
-                                          fontWeight: FontWeight.w700,
-                                          height: 0,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Positioned(
-                        top: 10,
-                        right: 20,
-                        child: Container(
-                          width: 20,
-                          height: 20,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/notification_add.png"),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 78, left: 75),
-                        child: Column(
+                    child: Stack(
+                      children: [
+                        Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              children: [
-                                Text(
-                                  'Dr. Subhash',
-                                  style: TextStyle(
-                                    color: Color(0xFF8B8B8B),
-                                    fontSize: 12,
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    height: 0,
-                                  ),
-                                ),
-                                SizedBox(width: 5),
-                                Text(
-                                  '||',
-                                  style: TextStyle(
-                                    color: Color(0xFF8B8B8B),
-                                    fontSize: 12,
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    height: 0,
-                                  ),
-                                ),
-                                SizedBox(width: 5),
-                                Text(
-                                  'IIT Madras',
-                                  style: TextStyle(
-                                    color: Color(0xFF8B8B8B),
-                                    fontSize: 12,
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    height: 0,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 10),
-                            Row(
-                              children: [
-                                Container(
-                                  width: 90,
-                                  height: 22,
-                                  decoration: BoxDecoration(
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10, left: 10),
+                              child: GestureDetector(
+                      onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      },
+                                child: Container(
+                                  width: 46,
+                                  height: 46,
+                                  decoration: ShapeDecoration(
                                     color: Colors.white,
-                                    borderRadius: BorderRadius.circular(7),
-                                    border: Border.all(
-                                        width: 1, color: Color(0xFF414ECA)),
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                          width: 1, color: Color(0xFFD9D9D9)),
+                                      borderRadius: BorderRadius.circular(12.50),
+                                    ),
                                   ),
-                                  child: Center(
-                                    child: Text(
-                                      'On-Site',
-                                      style: TextStyle(
-                                        color: Color(0xFF1B94F6),
-                                        fontSize: 10,
-                                        fontFamily: 'Nunito',
-                                        fontWeight: FontWeight.w700,
-                                        height: 0,
+                                  child: Container(
+                                    width: 25,
+                                    height: 25,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image:
+                                            AssetImage("assets/images/image9.png"),
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
                                   ),
                                 ),
-                                SizedBox(width: 10),
-                                Text(
-                                  '07 Mar 2024; Thursday',
-                                  style: TextStyle(
-                                    color: Color(0xFFF31919),
-                                    fontSize: 10,
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    height: 0,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 20, left: 10),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Python Basics',
+                                    style: TextStyle(
+                                      color: Color(0xFF260446),
+                                      fontSize: 15,
+                                      fontFamily: 'Nunito',
+                                      fontWeight: FontWeight.w700,
+                                      height: 0,
+                                    ),
                                   ),
-                                ),
-                              ],
+                                  SizedBox(height: 2),
+                                  Text.rich(
+                                    TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: 'ShareInfo',
+                                          style: TextStyle(
+                                            color: Color(0xFFEE5602),
+                                            fontSize: 12.50,
+                                            fontFamily: 'Nunito',
+                                            fontWeight: FontWeight.w700,
+                                            height: 0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: ' for ',
+                                          style: TextStyle(
+                                            color: Color(0xFF8B8B8B),
+                                            fontSize: 12.50,
+                                            fontFamily: 'Nunito',
+                                            fontWeight: FontWeight.w700,
+                                            height: 0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: 'CE Thalassery',
+                                          style: TextStyle(
+                                            color: Color(0xFF077AD7),
+                                            fontSize: 12.50,
+                                            fontFamily: 'Nunito',
+                                            fontWeight: FontWeight.w700,
+                                            height: 0,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 130, left: 75),
-                        child: Opacity(
-                          opacity: 0.80,
+                        Positioned(
+                          top: 10,
+                          right: 20,
                           child: Container(
-                            width: 180,
-                            height: 22,
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 9, vertical: 4),
-                            clipBehavior: Clip.antiAlias,
-                            decoration: ShapeDecoration(
-                              color: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                    width: 1, color: Color(0xFFEE5602)),
-                                borderRadius: BorderRadius.circular(7),
+                            width: 20,
+                            height: 20,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/notification_add.png"),
+                                fit: BoxFit.cover,
                               ),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'ShareInfo for Learn Assessment',
-                                  style: TextStyle(
-                                    color: Color(0xFFEE5602),
-                                    fontSize: 10,
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    height: 0,
-                                  ),
-                                ),
-                              ],
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.only(top: 78, left: 75),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    'Dr. Subhash',
+                                    style: TextStyle(
+                                      color: Color(0xFF8B8B8B),
+                                      fontSize: 12,
+                                      fontFamily: 'Nunito',
+                                      fontWeight: FontWeight.w700,
+                                      height: 0,
+                                    ),
+                                  ),
+                                  SizedBox(width: 5),
+                                  Text(
+                                    '||',
+                                    style: TextStyle(
+                                      color: Color(0xFF8B8B8B),
+                                      fontSize: 12,
+                                      fontFamily: 'Nunito',
+                                      fontWeight: FontWeight.w700,
+                                      height: 0,
+                                    ),
+                                  ),
+                                  SizedBox(width: 5),
+                                  Text(
+                                    'IIT Madras',
+                                    style: TextStyle(
+                                      color: Color(0xFF8B8B8B),
+                                      fontSize: 12,
+                                      fontFamily: 'Nunito',
+                                      fontWeight: FontWeight.w700,
+                                      height: 0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 10),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 90,
+                                    height: 22,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(7),
+                                      border: Border.all(
+                                          width: 1, color: Color(0xFF414ECA)),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        'On-Site',
+                                        style: TextStyle(
+                                          color: Color(0xFF1B94F6),
+                                          fontSize: 10,
+                                          fontFamily: 'Nunito',
+                                          fontWeight: FontWeight.w700,
+                                          height: 0,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Text(
+                                    '07 Mar 2024; Thursday',
+                                    style: TextStyle(
+                                      color: Color(0xFFF31919),
+                                      fontSize: 10,
+                                      fontFamily: 'Nunito',
+                                      fontWeight: FontWeight.w700,
+                                      height: 0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 130, left: 75),
+                          child: Opacity(
+                            opacity: 0.80,
+                            child: Container(
+                              width: 180,
+                              height: 22,
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 9, vertical: 4),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: ShapeDecoration(
+                                color: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                  side: BorderSide(
+                                      width: 1, color: Color(0xFFEE5602)),
+                                  borderRadius: BorderRadius.circular(7),
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'ShareInfo for Learn Assessment',
+                                    style: TextStyle(
+                                      color: Color(0xFFEE5602),
+                                      fontSize: 10,
+                                      fontFamily: 'Nunito',
+                                      fontWeight: FontWeight.w700,
+                                      height: 0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

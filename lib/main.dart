@@ -4,8 +4,11 @@ import 'package:mock_task/Assessments.dart';
 import 'package:mock_task/AssessmentsDetailedView.dart';
 import 'package:mock_task/AssessmentsSplash.dart';
 import 'package:mock_task/LeaderBoards.dart';
+import 'package:mock_task/OpeningFilters.dart';
 import 'package:mock_task/PracticeComingSoon.dart';
+import 'package:mock_task/PreRequirements.dart';
 import 'package:mock_task/PreRequirementsConfirmation.dart';
+import 'package:mock_task/TrainingDetailed.dart';
 import 'package:mock_task/TrainingsPages.dart';
 
 
