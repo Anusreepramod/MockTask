@@ -1,7 +1,4 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
-import 'package:mock_task/TrainingsPages.dart';
 
 class TrainingDetailed extends StatelessWidget {
   const TrainingDetailed({Key? key});
@@ -557,22 +554,16 @@ mainAxisSize: MainAxisSize.min,
 mainAxisAlignment: MainAxisAlignment.center,
 crossAxisAlignment: CrossAxisAlignment.center,
 children: [
- GestureDetector(
-                    onTap: () {
-                  Navigator.push(context as BuildContext,
-                      MaterialPageRoute(builder: (context) => const Training()));
-                    },
-  child: Text(
-  'Remind Me',
-  textAlign: TextAlign.center,
-  style: TextStyle(
-  color: Colors.white,
-  fontSize: 15,
-  fontFamily: 'Nunito',
-  fontWeight: FontWeight.w700,
-  height: 0,
-  ),
-  ),
+Text(
+'Remind Me',
+textAlign: TextAlign.center,
+style: TextStyle(
+color: Colors.white,
+fontSize: 15,
+fontFamily: 'Nunito',
+fontWeight: FontWeight.w700,
+height: 0,
+),
 ),
 ],
 ),

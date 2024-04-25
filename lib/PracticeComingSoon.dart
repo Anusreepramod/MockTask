@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mock_task/TrainingsPages.dart';
 
 class Practice extends StatelessWidget {
   const Practice({Key? key}) : super(key: key);
@@ -177,25 +178,31 @@ class Practice extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 200),
-            Container(
-              width: 303,
-              height: 44,
-              decoration: ShapeDecoration(
-                color: Color(0xFF414ECA),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
+            GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Training()));
+                    },
+              child: Container(
+                width: 303,
+                height: 44,
+                decoration: ShapeDecoration(
+                  color: Color(0xFF414ECA),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                 ),
-              ),
-              child: Center(
-                child: Text(
-                  'GET STARTED',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontFamily: 'Nunito',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
+                child: Center(
+                  child: Text(
+                    'Return Trainings !',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontFamily: 'Nunito',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
                   ),
                 ),
               ),

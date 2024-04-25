@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mock_task/TrainingDetailed.dart';
 
 class Assessment extends StatelessWidget {
   const Assessment({Key? key}) : super(key: key);
@@ -19,10 +20,16 @@ class Assessment extends StatelessWidget {
                 decoration: BoxDecoration(color: Colors.white),
                 child: Row(
                   children: [
-                    Image.asset(
-                      'assets/images/Arrow back (1).png',
-                      width: 22,
-                      height: 22,
+                    GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Assessment()));
+                    },
+                      child: Image.asset(
+                        'assets/images/Arrow back (1).png',
+                        width: 22,
+                        height: 22,
+                      ),
                     ),
                     SizedBox(width: 20),
                     Text(
@@ -35,13 +42,19 @@ class Assessment extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
-                    Container(
-                      width: 22,
-                      height: 22,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/data_exploration.png"),
-                          fit: BoxFit.fill,
+                    GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                      child: Container(
+                        width: 22,
+                        height: 22,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("assets/images/data_exploration.png"),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ),
                     ),

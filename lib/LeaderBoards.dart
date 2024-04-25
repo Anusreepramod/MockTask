@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mock_task/TrainingsPages.dart';
 
 class Leader extends StatelessWidget {
   const Leader({Key? key}) : super(key: key);
@@ -82,25 +83,31 @@ class Leader extends StatelessWidget {
               ),
             ),
             SizedBox(height: 150),
-            Container(
-              width: 303,
-              height: 44,
-              decoration: ShapeDecoration(
-                color: Color(0xFF414ECA),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
+            GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Training()));
+                    },
+              child: Container(
+                width: 303,
+                height: 44,
+                decoration: ShapeDecoration(
+                  color: Color(0xFF414ECA),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                 ),
-              ),
-              child: Center(
-                child: Text(
-                  'Explore More',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontFamily: 'Nunito',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
+                child: Center(
+                  child: Text(
+                    'Explore More',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontFamily: 'Nunito',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
                   ),
                 ),
               ),
