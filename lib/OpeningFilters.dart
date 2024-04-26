@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:mock_task/DrawerBox.dart';
-
 
 class StatusCategory extends StatefulWidget {
   const StatusCategory({super.key});
@@ -36,7 +36,7 @@ class _StatusCategoryState extends State<StatusCategory> {
               const Padding(
                 padding: EdgeInsets.only(left: 50),
                 child: Text(
-                  'Trainings Mode',
+                  'Application Status',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xFF34A853),
@@ -53,19 +53,19 @@ class _StatusCategoryState extends State<StatusCategory> {
               const DrawerBox(
                 boxColor: Color(0xFFDEE0F3),
                 labelColor: Color(0xFF4285F4),
-                labelText: 'All',
+                labelText: 'On-Going',
               ),
               const DrawerBox(
                 boxColor: Color(0xFFFFF6DA),
-                labelText: 'On-Site',
+                labelText: 'Pending',
                 labelColor: Color(0xFFC2930F),
               ),
               const DrawerBox(
-                  labelText: 'Hybrid',
+                  labelText: 'Rejected',
                   labelColor: Color(0xFFEA4335),
                   boxColor: Color(0xFFFCE1DF)),
               const DrawerBox(
-                  labelText: 'Remote',
+                  labelText: 'Approved',
                   labelColor: Color(0xFF34A853),
                   boxColor: Color(0xFFDEF9E5)),
               const SizedBox(
@@ -74,7 +74,7 @@ class _StatusCategoryState extends State<StatusCategory> {
               const Padding(
                 padding: EdgeInsets.only(left: 50),
                 child: Text(
-                  'Training Category',
+                  'Application Category',
                   textAlign: TextAlign.right,
                   style: TextStyle(
                     color: Color(0xFFEA4335),
@@ -89,24 +89,14 @@ class _StatusCategoryState extends State<StatusCategory> {
                 height: 15,
               ),
               const DrawerBox(
-                labelText: 'Show All',
-                labelColor: Color(0xFFC2930F),
-                boxColor: Color(0xFFDEE0F3),
-              ),
-              const DrawerBox(
-                labelText: 'Technical',
+                labelText: 'General',
                 labelColor: Color(0xFF4285F4),
                 boxColor: Color(0xFFDEE0F3),
               ),
               const DrawerBox(
-                labelText: 'Aptitudel',
+                labelText: 'Institutional',
                 labelColor: Color(0xFF34A853),
                 boxColor: Color(0xFFDEF9E5),
-              ),
-              const DrawerBox(
-                labelText: 'Masterclasses',
-                labelColor: Color.fromARGB(149, 189, 10, 177),
-                boxColor: Color.fromARGB(255, 243, 222, 237),
               ),
             ],
           ),
@@ -115,4 +105,3 @@ class _StatusCategoryState extends State<StatusCategory> {
     );
   }
 }
-

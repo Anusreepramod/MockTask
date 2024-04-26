@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mock_task/LeaderBoards.dart';
+import 'package:mock_task/OpeningFilters.dart';
 import 'package:mock_task/TrainingDetailed.dart';
 
 class Training extends StatelessWidget {
@@ -7,8 +8,11 @@ class Training extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
       backgroundColor: Colors.white,
+      key: _scaffoldKey,
+      endDrawer: const StatusCategory(),
       body: SingleChildScrollView(
         physics: AlwaysScrollableScrollPhysics(),
         child: Column(
@@ -104,13 +108,18 @@ class Training extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    width: 30,
-                    height: 30,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage("assets/images/Frame 37418 (1).png"),
-                        fit: BoxFit.fill,
+                 GestureDetector(
+                          onTap: () {
+                            _scaffoldKey.currentState!.openEndDrawer();
+                          },
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/Frame 37418 (1).png"),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                   ),

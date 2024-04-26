@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mock_task/TrainingsPages.dart';
 
 class TrainingDetailed extends StatelessWidget {
   const TrainingDetailed({Key? key});
@@ -9,7 +10,11 @@ class TrainingDetailed extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: Image.asset('assets/images/Arrow back (1).png'),
+          icon: GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Training()));
+                    },child: Image.asset('assets/images/Arrow back (1).png')),
           onPressed: () {
             Navigator.pop(context);
           },

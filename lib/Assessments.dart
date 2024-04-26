@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mock_task/AssessmentsDetailedView.dart';
+import 'package:mock_task/LeaderBoards.dart';
 import 'package:mock_task/TrainingDetailed.dart';
 
 class Assessment extends StatelessWidget {
@@ -45,7 +47,7 @@ class Assessment extends StatelessWidget {
                     GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const Leader()));
                     },
                       child: Container(
                         width: 22,
@@ -90,13 +92,19 @@ class Assessment extends StatelessWidget {
                                 color: Color(0xFFD9D9D9),
                               ),
                             ),
-                            child: Container(
-                              width: 25,
-                              height: 25,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage("assets/images/image9.png"),
-                                  fit: BoxFit.cover,
+                            child: GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                              child: Container(
+                                width: 25,
+                                height: 25,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage("assets/images/image9.png"),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
@@ -154,13 +162,19 @@ class Assessment extends StatelessWidget {
                           Positioned(
                             top: 0,
                             right: 0,
-                            child: Container(
-                              width: 20,
-                              height: 20,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage("assets/images/notification_add.png"),
-                                  fit: BoxFit.cover,
+                            child: GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                              child: Container(
+                                width: 20,
+                                height: 20,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage("assets/images/notification_add.png"),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
@@ -194,64 +208,82 @@ class Assessment extends StatelessWidget {
                       SizedBox(height: 10),
                       Row(
                         children: [
-                          Container(
-                            width: 110,
-                            height: 39,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(7),
-                              border: Border.all(width: 1, color: Color(0xFFEE5602)),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'MCQ Level',
-                                style: TextStyle(
-                                  color: Color(0xFFEE5602),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
+                          GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                            child: Container(
+                              width: 110,
+                              height: 39,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(7),
+                                border: Border.all(width: 1, color: Color(0xFFEE5602)),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'MCQ Level',
+                                  style: TextStyle(
+                                    color: Color(0xFFEE5602),
+                                    fontSize: 10,
+                                    fontFamily: 'Nunito',
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                           SizedBox(width: 10),
-                          Container(
-                            width: 99,
-                            height: 39,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(7),
-                              border: Border.all(width: 1, color: Color(0xFFEE5602)),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'Technical Test',
-                                style: TextStyle(
-                                  color: Color(0xFFEE5602),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
+                          GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                            child: Container(
+                              width: 99,
+                              height: 39,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(7),
+                                border: Border.all(width: 1, color: Color(0xFFEE5602)),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Technical Test',
+                                  style: TextStyle(
+                                    color: Color(0xFFEE5602),
+                                    fontSize: 10,
+                                    fontFamily: 'Nunito',
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                           SizedBox(width: 10),
-                          Container(
-                            width: 99,
-                            height: 39,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(7),
-                              border: Border.all(width: 1, color: Color(0xFFEE5602)),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'Aptitude',
-                                style: TextStyle(
-                                  color: Color(0xFFEE5602),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
+                          GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                            child: Container(
+                              width: 99,
+                              height: 39,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(7),
+                                border: Border.all(width: 1, color: Color(0xFFEE5602)),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Aptitude',
+                                  style: TextStyle(
+                                    color: Color(0xFFEE5602),
+                                    fontSize: 10,
+                                    fontFamily: 'Nunito',
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
                               ),
                             ),
@@ -259,21 +291,54 @@ class Assessment extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: 10),
-                      Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(7),
-                          border: Border.all(width: 1, color: Color(0xFFEE5602)),
+                      GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                    },
+                        child: Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(7),
+                            border: Border.all(width: 1, color: Color(0xFFEE5602)),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8),
+                            child: Center(
+                              child: Text(
+                                'ShareInfo for Learn Assessment Ends on: 19 Mar 2024',
+                                style: TextStyle(
+                                  color: Color(0xFFEE5602),
+                                  fontSize: 10,
+                                  fontFamily: 'Nunito',
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: Center(
+                      ),
+                      SizedBox(height: 20),
+                      GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Assessments()));
+                    },
+                        child: Container(
+                          width: double.infinity,
+                          height: 45,
+                          decoration: BoxDecoration(
+                            color: Color(0xFF414ECA),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: TextButton(
+                            onPressed: () {},
                             child: Text(
-                              'ShareInfo for Learn Assessment Ends on: 19 Mar 2024',
+                              'Attempt Now',
                               style: TextStyle(
-                                color: Color(0xFFEE5602),
-                                fontSize: 10,
+                                color: Colors.white,
+                                fontSize: 15,
                                 fontFamily: 'Nunito',
                                 fontWeight: FontWeight.w700,
                               ),
@@ -281,44 +346,29 @@ class Assessment extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Container(
-                        width: double.infinity,
-                        height: 45,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF414ECA),
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Attempt Now',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontFamily: 'Nunito',
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ),
-                      ),
                       SizedBox(height: 8),
-                      Container(
-                        width: double.infinity,
-                        height: 45,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF077AD7),
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Check Pre-Requirement',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontFamily: 'Nunito',
-                              fontWeight: FontWeight.w700,
+                      GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Assessments()));
+                    },
+                        child: Container(
+                          width: double.infinity,
+                          height: 45,
+                          decoration: BoxDecoration(
+                            color: Color(0xFF077AD7),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              'Check Pre-Requirement',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontFamily: 'Nunito',
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
                           ),
                         ),
