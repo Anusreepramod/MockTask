@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mock_task/LeaderBoards.dart';
 import 'package:mock_task/OpeningFilters.dart';
 import 'package:mock_task/TrainingDetailed.dart';
+import 'package:mock_task/page2.dart';
 
 class Training extends StatelessWidget {
   const Training({Key? key}) : super(key: key);
@@ -133,7 +134,7 @@ class Training extends StatelessWidget {
                 child:  GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                   child: Container(
                     width: 335,
@@ -155,7 +156,7 @@ class Training extends StatelessWidget {
                               child: GestureDetector(
                       onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                        MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                       },
                                 child: Container(
                                   width: 46,

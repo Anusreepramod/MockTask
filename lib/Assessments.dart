@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mock_task/AssessmentsDetailedView.dart';
 import 'package:mock_task/LeaderBoards.dart';
 import 'package:mock_task/TrainingDetailed.dart';
+import 'package:mock_task/page2.dart';
 
 class Assessment extends StatelessWidget {
   const Assessment({Key? key}) : super(key: key);
@@ -95,7 +96,7 @@ class Assessment extends StatelessWidget {
                             child: GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                               child: Container(
                                 width: 25,
@@ -165,7 +166,7 @@ class Assessment extends StatelessWidget {
                             child: GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                               child: Container(
                                 width: 20,
@@ -211,7 +212,7 @@ class Assessment extends StatelessWidget {
                           GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                             child: Container(
                               width: 110,
@@ -238,7 +239,7 @@ class Assessment extends StatelessWidget {
                           GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                             child: Container(
                               width: 99,
@@ -265,7 +266,7 @@ class Assessment extends StatelessWidget {
                           GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                             child: Container(
                               width: 99,
@@ -294,7 +295,7 @@ class Assessment extends StatelessWidget {
                       GestureDetector(
                     onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+                      MaterialPageRoute(builder: (context) => const TrainingDetailed2()));
                     },
                         child: Container(
                           width: double.infinity,
@@ -334,13 +335,19 @@ class Assessment extends StatelessWidget {
                           ),
                           child: TextButton(
                             onPressed: () {},
-                            child: Text(
-                              'Attempt Now',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
+                            child: GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Assessments()));
+                    },
+                              child: Text(
+                                'Attempt Now',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                  fontFamily: 'Nunito',
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
                             ),
                           ),
@@ -361,13 +368,19 @@ class Assessment extends StatelessWidget {
                           ),
                           child: TextButton(
                             onPressed: () {},
-                            child: Text(
-                              'Check Pre-Requirement',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
+                            child: GestureDetector(
+                    onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Assessments()));
+                    },
+                              child: Text(
+                                'Check Pre-Requirement',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                  fontFamily: 'Nunito',
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
                             ),
                           ),
